@@ -9,10 +9,10 @@ html, body{
 	height: 100%;
 }
 
-/*.container{
+.container{
 	width: 1280px;
 	margin: 0 auto;
-}*/
+}
 
 .clear{
 	clear: both;
@@ -228,7 +228,7 @@ section.sessao1 .container{
 .wraper-part1{
 	max-width: 600px;
 	float: right;
-	padding-right: 30px;
+	padding: 0 30px;
 }
 
 .part1 h2{
@@ -318,6 +318,16 @@ section.sessao1 .container{
 	background-color: rgb(200, 200, 200);
 }
 
+/*Aqui estou começando a sessao4*/
+
+section.sessao4{
+	background-color: #472563;
+	padding: 100px 0;
+}
+
+
+/*Aqui estou finalizando a sessao4*/
+
 @media screen and (max-width: 830px){
 	.chamada1{
 		max-width: none;
@@ -366,6 +376,10 @@ section.sessao1 .container{
 		text-align: center;
 	}
 
+	.sessao1 .container{
+		height: auto;
+	}
+
 	.texto-sessao1{
 		width: 100%;
 		margin-top: 0;
@@ -377,6 +391,7 @@ section.sessao1 .container{
 
 	.texto-sessao1 ul{
 		display: inline-block;
+		margin-top:20px;
 	}
 
 	.texto-sessao1 ul li{
@@ -393,7 +408,26 @@ section.sessao1 .container{
 	}
 
 	.sessao2{
-		padding: 40px 2%;
+		padding: 40px;
 	}
 
 }
+
+@media screen and (max-width: 580px){
+	.part1{
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	.part2{
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	.sessao2 img{
+		top: 16px;
+		margin-top: 20px;
+	}
+}
+
+/*parei 10m e 15*/
