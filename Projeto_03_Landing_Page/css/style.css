@@ -328,7 +328,80 @@ section.sessao4{
 
 /*Aqui estou finalizando a sessao4*/
 
-@media screen and (max-width: 830px){
+.form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 400px;
+}
+
+.form form{
+	margin-top: 15px;
+}
+
+.form form input[type=text]{
+	width: 100%;
+	max-width: 480px;
+	margin-top: 5px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+	border: 1px solid rgb(200, 200, 200);
+}
+
+.form form textarea{
+	width: 100%;
+	margin-top: 8px;
+	max-width: 480px;
+	padding: 15px;
+	border: 1px solid rgb(200, 200, 200);
+	height: 160px;
+}
+
+.form form input[type=submit]{
+	background-color: #FF703D;
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	margin-top: 15px;
+	border-radius: 30px;
+	border: 0;
+}
+
+.map-wrapper{
+	float: left;
+	width: 50%;
+	color: white;
+}
+
+.map-wrapper h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.map{
+	margin-top: 10px;
+	width: 480px;
+	height: 480px;
+	background-color: white;
+	border: 5px solid rgb(200, 200, 200);
+}
+
+/*@media screen and (max-width: 830px){*/
+@media screen and (max-width: 1350px){
 	.chamada1{
 		max-width: none;
 		width: 100%;
@@ -352,8 +425,8 @@ section.sessao4{
 }
 
 
-@media screen and (max-width: 768px){
-
+/*@media screen and (max-width: 768px){*/
+@media screen and (max-width: 1300px){
 	header{
 		width: 100%;
 		height: auto;
@@ -430,4 +503,3 @@ section.sessao4{
 	}
 }
 
-/*parei 10m e 15*/
