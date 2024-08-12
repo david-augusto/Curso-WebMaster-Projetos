@@ -30,16 +30,21 @@ header .logo img{
 	width: 236px;
 }
 
-header nav{
+nav.menu-mobile{
+	float: left;
+	display: none;
+}
+
+header nav.menu-desktop{
 	float: right;
 }
 
-header nav ul{
+header nav.menu-desktop ul{
 	padding: 8px 0;
 	list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
 	float: left;
 	font-size: 14px;
 	padding: 0 20px;
@@ -75,9 +80,9 @@ section.servicos > .container{
 	max-width: 800px;
 	display: flex;
 	align-items: center;
-	text-align: center;
 	position: relative;
 	top: -30px;
+	text-align: center;
 }
 
 section.servicos > .container .box-servico{
@@ -103,24 +108,28 @@ section.servicos > .container .box-servico p{
 
 section.servicos > .container .box-servico:nth-of-type(1){
 	 width: 30%;
-	 padding: 30px 2%;
+	 padding: 50px 2%;
 	 background-color: #576975;
 }
 
 section.servicos > .container .box-servico:nth-of-type(2){
 	width: 40%;
-	padding: 60px 2%;
+	padding: 80px 2%;
 	background-color: #688293;
 	background-image: none;
 }
 
 section.servicos > .container .box-servico:nth-of-type(3){
 	width: 30%;
-	padding: 30px 2%;
+	padding: 50px 2%;
 	background-color: #576975;
 }
 
 section.perfil-container{
+	padding: 40px 0;
+}
+
+section.perfil-container .container{
 	max-width: 800px;
 }
 
@@ -149,5 +158,107 @@ section.perfil-container .img-perfil{
 
 section.perfil-container .texto-perfil{
 	width: 60%;
+	padding: 0 30px;
 }
 
+section.perfil-container .texto-perfil h2{
+	color: #698293;
+	font-size: 18px;
+}
+
+section.perfil-container .texto-perfil p{
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+@media screen and (max-width: 768px){
+
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+
+	section.servicos > .container{
+		/*
+		max-width: 800px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		top: -30px;
+		text-align: center;
+		*/
+		flex-direction: column;
+	}
+
+	section.servicos > .container .box-servico:nth-of-type(1){
+		width: 90%;
+		max-width: 350px;
+		padding: 30px 2%;
+   }
+   
+   section.servicos > .container .box-servico:nth-of-type(2){
+	   width: 94%;
+	   max-width: 380px;
+	   padding: 40px 2%;
+   }
+   
+   section.servicos > .container .box-servico:nth-of-type(3){
+	   width: 90%;
+	   max-width: 350px;
+	   padding: 30px 2%;
+   }
+
+   
+
+   section.perfil-container .perfil-wraper2{
+		/*position: absolute;
+		left: 0;
+		top: 0;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;*/
+		text-align: center;
+		display: inline-block;
+		/*flex-direction: column;*/
+	}
+
+	section.perfil-container .img-perfil{
+		width: 50%;
+		padding-top: 70%;
+		display: inline-block;
+		height: auto;
+		/*background-image: url('../imagens/img_perfil.png');
+		background-color: #ccc;
+		background-size: 100% 100%;*/
+	}
+	
+	section.perfil-container .texto-perfil{
+		display: inline-block;
+		text-align: justify;
+		width: 100%;
+		padding: 0 30px;
+	}
+}
+
+@media screen  and (max-width: 580px){
+
+	section.perfil-container .img-perfil{
+		width: 80%;
+		padding-top: 110%;
+	}
+
+}
+
+/*@media screen  and (max-width: 480px){*/
+@media screen  and (max-width: 510px){
+
+	header .logo img{
+		width: 200px;
+	}
+	
+}
