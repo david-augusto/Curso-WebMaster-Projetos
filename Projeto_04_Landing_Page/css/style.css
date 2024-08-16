@@ -319,9 +319,12 @@ section.depoimentos .depoimento-single{
 .img-mosaico-single-social{
 	float: left;
 	width: calc(100% / 9);
+	background-repeat: no-repeat;
+	background-size: 100%;
 	padding-top: calc(100% / 9);
-	background-color: blue;
+	background-color: rgb(210, 210, 210);
 	border: 6px solid white;
+	background-image: url('imagens/img_perfil.png');
 }
 
 .facebook-chamada{
