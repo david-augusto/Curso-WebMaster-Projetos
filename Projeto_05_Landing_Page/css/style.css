@@ -212,6 +212,10 @@ section.veiculos-destaque .line-titulo h2{
     width: 150px;
 }
 
+.servicos-descricao{
+    display: flex;
+}
+
 .vitrine-destaque a{
     margin-left: 8px;
     margin-top: 10px;
@@ -219,15 +223,15 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 .half1{
-    float: left;
     width: 50%;
-    text-align: center;
+    text-align: right;
     padding: 90px 0;
     background-color: #242424;
     color: white;
 }
 
 .half1-wraper{
+    padding-right: 30%;
     text-align: left;
     display: inline-block;
 }
@@ -254,13 +258,48 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 .half2{
-    float: left;
     width: 50%;
-    text-align: center;
-    padding: 90px 0;
+    padding: 90px 100px;
     background-color: #EB2D2D;
     color: white;
 }
+
+.half2 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half2 .depoimento-single{
+    margin-top: 19px;
+}
+
+.depoimento-single p{
+    font-size: 22px;
+}
+
+.arrows{
+    float: left;
+}
+
+.navigation{
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.navigation img{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.nome-depoimento{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
 
 @media screen and (max-width: 1400px){
     section.banner{
@@ -278,7 +317,16 @@ section.veiculos-destaque .line-titulo h2{
     }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1000px){
+
+    .half1{
+        text-align: center;
+    }
+
+    .half1-wraper{
+        padding-right: 0;
+        text-align:left;
+    }
     .half1-wraper a{
         display: block;
         margin-left: 0;=
@@ -286,6 +334,17 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 @media screen and (max-width: 768px){
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+
+
+    .half1, .half2{
+        padding: 80px 4%;
+        width: 100%;
+    }
+
     nav.desktop{
         display: none;
     }
