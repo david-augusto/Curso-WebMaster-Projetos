@@ -388,6 +388,21 @@ section.venda{
     min-height: 90%;
 }
 
+.content-venda{
+    margin-top: 40px;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+}
+
+.search1 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
 @media screen and (max-width: 1400px){
     section.banner{
         background-size: 90% auto;
@@ -506,3 +521,4 @@ section.venda{
         width: 100%;
     }
 }
+
