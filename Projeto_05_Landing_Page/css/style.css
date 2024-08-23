@@ -383,6 +383,11 @@ footer p{
     font-style: italic;
 }
 
+section.venda{
+    padding: 90px 0;
+    min-height: 90%;
+}
+
 @media screen and (max-width: 1400px){
     section.banner{
         background-size: 90% auto;
