@@ -398,7 +398,7 @@ section.venda{
 }
 
 .search1{
-    width: 300px;
+    width: 90%;
 }
 
 .search1 h2{
@@ -424,7 +424,7 @@ section.venda{
     width: 30%;
     height: 20px;
     border-radius: 20px;
-    background: rgb(200, 200, 200);
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(200, 200, 200));
 }
 
 .pointer-barra{
@@ -435,8 +435,8 @@ section.venda{
     top: -3px;
     cursor: pointer;
     border-radius: 8px;
-    background: rgb(210, 210, 210);
-    border: 1px solid black;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(180, 180, 180));
+    border: 1px solid #777;
 
 }
 
@@ -476,19 +476,45 @@ section.venda{
 }
 
 .form-venda-wraper label{
-    width: 25px;
+    width: 20px;
     height: 20px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 3px;
     vertical-align: top;
     cursor: pointer;
+    position: relative;
+}
+
+.circle{
+    width: 8px;
+    height: 8px;
+    display: none;
+    border-radius: 4px;
+    background: black;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+    display: block;
 }
 
 .form-venda-wraper span{
     padding: 0 10px;
     display: inline-block;
     vertical-align: top;
+}
+
+.vitrine-venda{
+    overflow: hidden;
+    float: left;
+    width: 70%;
+}
+
+.vitrine-venda .vitrine-destaque{
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1400px){
@@ -563,6 +589,25 @@ section.venda{
 
     nav.mobile{
         display: block;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align:center;
+    }
+
+    .search1{
+        display: inline-block;
+    }
+
+    .search2{
+        text-align:left;
+        display: inline-block;
+    }
+
+    .vitrine-venda{
+        text-align: center;
+        width: 100%;
     }
 }
 
