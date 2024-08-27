@@ -517,6 +517,11 @@ section.venda{
     margin-top: 20px;
 }
 
+section.venda-single .container{
+    padding: 40px 0;
+    max-width: 1000px;
+}
+
 @media screen and (max-width: 1400px){
     section.banner{
         background-size: 90% auto;
@@ -655,4 +660,4 @@ section.venda{
     }
 }
 
-/* bl 18 aula 17 */
+/* bl 19 aula 18 09:14 */
