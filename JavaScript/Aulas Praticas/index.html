@@ -11,15 +11,19 @@
     <script>
 
         window.onload = function(){
-            var nome_pessoa, idade;
+            
+            var animal = {};
+            
+            animal.nome = [];
+            animal.peso = '24kg';
+            animal.idade = 23;
+            animal['cor'] = 'marrom';
 
+            animal.nome[0] = "Nick";
+            animal.nome[1] = "Douglinhas"
 
-            nome_pessoa = "David";
-            idade = 26;
-
-
-            alert("Olá " +nome_pessoa);
-            alert("Você tem "+idade+" anos");
+            console.log(animal.nome[0]);
+            console.log(animal['cor']);
 
         }
     </script>
