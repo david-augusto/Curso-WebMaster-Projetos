@@ -14,13 +14,10 @@ window.onload = function(){
 
     var variavel = [];
 
-    variavel[0] = [];
+    variavel.obj = {};
 
+    variavel.obj.nome = 'David';
 
-    variavel[0][2] = 'David';
-
-    console.log(variavel[0][2]);
+    console.log(variavel.obj.nome);
     
 }
-
-/*Parei bl 20 aula 09 1h21min
