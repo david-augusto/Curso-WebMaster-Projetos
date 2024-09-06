@@ -42,5 +42,8 @@ window.onload = function(){
     var conteudo = '<p style="color:black;font-size:13px;padding:10px 0;">Meu endereço!</p>'
     addMarker(-9.396238,-40.490946,'',conteudo, true);
 
-    addMarker();
+    setTimeout(function(){
+        map.panTo({'lat':-23.550520,'lng':-46.633309});
+    },4000);
+
 }
