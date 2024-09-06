@@ -11,13 +11,11 @@ window.onload = function(){
 
     obj.func2(); */
 
+//Aqui é um comentário de uma linha
 
-    var variavel = [];
+/*
+Aqui é um comentário de várias linha
 
-    variavel.obj = {};
-
-    variavel.obj.nome = 'David';
-
-    console.log(variavel.obj.nome);
+*/
     
 }
