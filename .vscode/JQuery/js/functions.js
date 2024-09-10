@@ -1,33 +1,27 @@
 $(function(){
 
-        function validarCliqueHover(){
+        /*
+        var timer;
 
-                $('.artigo1').click(function(){
-                        $('.artigo2').css('background-color', 'purple');
-                });
+        $(window).scroll(function(){
+                //quando o scroll ocorre
+        })
 
+        $(window).resize(function(){
+                console.log("Minha tela está sendo redimensionada!");
+                clearTimeout(timer);
+             timer =   setTimeout(function(){
+                        location.href = "http://127.0.0.1:5501/.vscode/JQuery/index.html";
+                },1000);
+                
+        })
 
-                $('.artigo1').hover(function(){
-                        $('.artigo2').css('background-color', 'red');
-                },function(){
-                        $('.artigo2').css('background-color','rgb(100, 100, 100);');
-                }); 
-        }
+        $('a').click(function(e){
+                e.preventDefault();
+        })
+                */
 
-       function validarFormulario(){
-                $('textarea').focus(function(){
-                        //Executa algo
-                        console.log("Foco!");
-                }).blur(function(){
-                        //executa algo
-                        console.log("Retiramos o Foco!");
-                });
-
-                $('select').change(function(){
-                        console.log("Meu select foi alterado!")
-                })
-       }
-
-       validarFormulario();
-       validarCliqueHover();
+        $('body').click(function(){
+                $('.box').css('backgrounf-color','green');
+        })
 })
