@@ -10,7 +10,10 @@ html, body{
 
 
 .artigo1{
-    width: 100%;
-    /*padding: 30px;*/
     background-color: rgb(210, 210, 210);
+}
+
+.artigo2{
+    background-color: rgb(100, 100, 100);
+    margin-top: 190px;
 }
