@@ -21,7 +21,11 @@ $(function(){
         })
                 */
 
+        $('.box').click(function(e){
+                e.stopPropagation();
+        })
+
         $('body').click(function(){
-                $('.box').css('backgrounf-color','green');
+                $('.box').css('opacity','0.1');
         })
 })
