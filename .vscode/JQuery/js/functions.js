@@ -1,31 +1,15 @@
 $(function(){
+        var elWidth = $('.box').width();
 
-        /*
-        var timer;
+        $('.box').width('900');
 
-        $(window).scroll(function(){
-                //quando o scroll ocorre
-        })
+        $('.box').css('width','500');
 
-        $(window).resize(function(){
-                console.log("Minha tela está sendo redimensionada!");
-                clearTimeout(timer);
-             timer =   setTimeout(function(){
-                        location.href = "http://127.0.0.1:5501/.vscode/JQuery/index.html";
-                },1000);
-                
-        })
+        console.log("Width: "+$('.box').width());
+        console.log("Inner Width: "+$('.box').innerWidth());
+        console.log("Outer Width: "+$('.box').outerWidth(true));
 
-        $('a').click(function(e){
-                e.preventDefault();
-        })
-                */
-
-        $('.box').click(function(e){
-                e.stopPropagation();
-        })
-
-        $('body').click(function(){
-                $('.box').css('opacity','0.1');
-        })
-})
+        console.log("Height: "+$('.box').height());
+        console.log("Inner Height: "+$('.box').innerHeight());
+        console.log("Outer Height: "+$('.box').outerHeight(true));
+});
