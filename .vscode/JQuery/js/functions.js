@@ -1,15 +1,11 @@
 $(function(){
-        var elWidth = $('.box').width();
+        var el = $('.box');
 
-        $('.box').width('900');
+        var meutexto = 'Olá Mundo';
+        el.html('<div class="teste">Meu elemento</div>');
+        el.html("<div class=\"teste\">"+meutexto+"</div>");
 
-        $('.box').css('width','500');
+        el.html(el.html() + '<h1 class="texto1">Meu texto via javascript</h1>')
 
-        console.log("Width: "+$('.box').width());
-        console.log("Inner Width: "+$('.box').innerWidth());
-        console.log("Outer Width: "+$('.box').outerWidth(true));
-
-        console.log("Height: "+$('.box').height());
-        console.log("Inner Height: "+$('.box').innerHeight());
-        console.log("Outer Height: "+$('.box').outerHeight(true));
+        console.log(el.html);
 });
