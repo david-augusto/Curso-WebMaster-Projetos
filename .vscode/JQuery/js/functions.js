@@ -7,5 +7,8 @@ $(function(){
 
         el.html(el.html() + '<h1 class="texto1">Meu texto via javascript</h1>')
 
-        console.log(el.html);
+        $('.box2').text("<div></div>");
+        $('.box2').text("Olá mundo");
+
+        console.log($('.box2').text());
 });
