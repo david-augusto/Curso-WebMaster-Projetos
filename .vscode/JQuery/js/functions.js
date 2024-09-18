@@ -19,7 +19,8 @@ $(function(){
         */
 
         $('input[type=button]').click(function(){
-                var v = $('input[type=text]').val();
-                console.log(v);
+                var str = $('input[type=text]').val();
+                var var2 = str.split("@");
+                console.log(var2);
         })
 });
