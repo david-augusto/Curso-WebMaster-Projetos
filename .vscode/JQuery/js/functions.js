@@ -19,8 +19,19 @@ $(function(){
         */
 
         $('input[type=button]').click(function(){
-                var str = $('input[type=text]').val();
-                var var2 = str.split("@");
-                console.log(var2);
+
+              /*  var splitstr = str.split("@");
+
+                if(splitstr[1] == 'hotmail.com'){
+                        $('input[type=text]').css('opacity','0');
+                }else{
+                        console.log("A condição não bateu")
+                } */
+
+                  
+
         })
+
+        
+
 });
