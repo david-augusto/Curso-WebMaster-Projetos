@@ -1,15 +1,9 @@
 $(function(){
 
-
-      $('body').on('click','a',function(){
-            $('body').css('background','black');
-            return false;
-      });
-
-      setTimeout(function(){
-            $('body').html('<a href="">Meu Link</a>');
-      },1000)
-
-      
+      var func = function(){
+            $('input[type=text]').eq($(this).index()).css('background','green');
+      }
+    /*$('input[type=text]').keyup(func);*/
+     $('input[type=text]').keydown(func);
 
 });
