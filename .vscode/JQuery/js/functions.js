@@ -1,9 +1,14 @@
 $(function(){
 
-      var func = function(){
-            $('input[type=text]').eq($(this).index()).css('background','green');
-      }
-    /*$('input[type=text]').keyup(func);*/
-     $('input[type=text]').keydown(func);
+      $('.form_contato').submit(function(){
+            var container = $('.container');
+            var content = 'Nome: ' + $('input[name=nome]').val() +
+            '<hr>E-mail: '+ $('input[name=email]').val() +
+            '<hr>Telefone: '+$('input[name=telefone').val();
+
+            container.html(content);
+
+            return false;
+      })
 
 });
