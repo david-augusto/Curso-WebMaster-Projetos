@@ -1,15 +1,19 @@
 $(function(){
 
-      /*$('.box1').fadeOut(2000, function(){
-            $('.box2').fadeIn(1000, function(){
-                  console.log("Terminamos nossa animação");
-            })
-      });*/
+      $('.box1').addClass('minhaclasse');
 
-      $('.box1').click(function(){
-            $('.box2').slideToggle(4000,function(){
-                  location.href="https://www.google.com"
-            });
-      })
+      //$('.minhaclasse').remove();
+
+      $('.box1').removeClass('minhaclasse');
+
+      //$('.box1 > .child1 > .child2').css('color', 'purple');
+      //$('.box1').find('.child1').find('.child2').css('color','orange');
+
+      var el = $('.box1').find('.child1').find('.child2');
+      el.css('color','brown');
+
+      $('minhatag').attr('meuattr','outrovalor');
+
+      alert($('minhatag').attr('meuattr'));
 
 });
