@@ -1,9 +1,11 @@
 $(function(){
 
-     var el = $('#source .texto').clone();
-
-     //$('#container').html(el.html());
-
-     $('#source .texto').appendTo('#container');
+     $.ajax({
+          'url':'conteudo.html',
+          //'method':'post',
+          //data:{'nome':'David','idade':'26'}
+     }).done(function(data){
+          $('#container').append(data);
+     });
 
 });
